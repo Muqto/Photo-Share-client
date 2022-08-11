@@ -1,0 +1,39 @@
+
+.card{
+    position: relative;
+    border-radius: 15px !important;
+    margin: 0 15px 10px 0;
+}
+.img-overlay{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    filter:brightness(70%);
+    cursor: pointer;
+    max-height: 250px;
+}
+.more-horiz{
+    position: absolute !important;
+    top: 15px;
+    right: 15px;
+
+}
+.tags{
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.content{
+    padding-left: 15px;
+}
+.action-buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 !important;
+    margin: 0 15px 15px 15px;
+}
+

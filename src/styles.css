@@ -1,0 +1,8 @@
+.appbar{
+    padding: 20px 0 20px 0;
+    flex-direction: row !important;
+}
+img {
+    height:120%;
+    object-fit:cover;
+  }

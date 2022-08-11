@@ -1,0 +1,32 @@
+.desc { 
+    display: flex;
+    flex-direction: column !important;
+    gap: 5px;
+  }
+
+.tag{
+  color: rgb(173, 173, 173);
+}
+.recs{
+  margin-bottom: 10px !important;
+}
+.rec{
+  display: flex;
+  flex-direction: column !important;
+  gap: 5px;
+  
+}
+.msg{
+  height: 100%;
+}
+.rec-img{
+  transition: all 0.1s ease-in-out;
+}
+.rec-img:hover{
+  filter: brightness(70%);
+}
+.avatar{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
