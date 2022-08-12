@@ -5,6 +5,7 @@ import FileBase from 'react-file-base64'
 import { createPost, setPostId, updatePost } from "../../actions/posts"
 import { useDispatch, useSelector } from "react-redux"
 import useStyles from "./styles"
+import defaultPic from '../../images/default-pic'
 
 const Form = () => {
     const [postData, setPostData] = useState({
@@ -32,22 +33,29 @@ const Form = () => {
     const classes = useStyles()
     const handleSubmit = (e) => { 
         e.preventDefault();
-  ////work on this
         if(id){
             if(Array.isArray(postData.tags)){
                 dispatch(updatePost(id, {...postData, name: user?.result?.name}))
                 clear()
+                
             }
             else{
+                
                 dispatch(updatePost(id, {...postData, tags : postData.tags.split(','), name: user?.result?.name}))
                 clear()
             }
             
         }
         else{
-            
-            dispatch(createPost({...postData, tags : postData.tags.split(","), name: user?.result?.name}))
+            if( postData.selectedFile === ''){
+                dispatch(createPost({...postData, tags : postData.tags.split(","), name: user?.result?.name, selectedFile : defaultPic}))
             clear()
+            }
+            else{
+                dispatch(createPost({...postData, tags : postData.tags.split(","), name: user?.result?.name}))
+            clear()
+            }
+            
         }
         
     }
