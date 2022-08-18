@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Avatar,Button, Paper,Grid,Typography, Container, TextField, OutlinedInput, Alert} from '@mui/material'
+import { Avatar,Button, Paper,Grid,Typography, Container, TextField, OutlinedInput, Alert, Slide} from '@mui/material'
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import useStyles from './styles'
 import Password from './Password';
@@ -150,13 +150,14 @@ export default function Auth() {
         </Paper>
 
         {error?.authData?.name === 'AxiosError' && 
-       
-            <Alert 
-            style={{ marginTop: '15%', justifyContent:'center'}} 
-            severity="error">
-            <Typography >{error?.authData?.response?.data?.message}</Typography>
-            </Alert>
-        
+           <Slide direction='up' in={true} >            
+                <Alert 
+                    style={{ marginTop: '15%', justifyContent:'center'}} 
+                    severity="error"
+                    >
+                        <Typography >{error?.authData?.response?.data?.message}</Typography>
+                </Alert>
+            </Slide> 
         }
 
     </Container>
