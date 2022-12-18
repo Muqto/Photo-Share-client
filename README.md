@@ -53,7 +53,7 @@
 
 Photo Share
 
-Social media website made using React, Redux, Redux-Thunk, CSS and Material UI for the frontend. Node, Express and MongoDB for the backend. This repository is stricly for the front end
+Social media website made using React, Redux, Redux-Thunk, CSS and Material UI for the frontend. Node, Express and MongoDB for the backend. This repository is for the front end, visit [Photo Share Back End](https://github.com/Muqto/photoshare-backend/) to view the back end code.
 
 Features:
 * Authetication
