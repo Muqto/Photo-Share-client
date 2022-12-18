@@ -20,7 +20,7 @@
   <h3 align="center">Photo Share</h3>
 
   <p align="center">
-    Full stack social media website that allows you to create posts, interact with other posts by leaving a like!  
+    Full stack social media website that allows you to create posts and interact with other posts by leaving a like!  
     <br />
   </p>
 </div>
